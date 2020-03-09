@@ -1,4 +1,6 @@
 
+from GeneralVar import Generals
+
 class iop:    
     def createFile(self, fileName):
         f = open(fileName, "w+")
@@ -27,6 +29,6 @@ class iop:
         dictioOfFileNames = {}
         
         for i in fileNames:
-            dictioOfFileNames[i] = self.read(subLibrary+i)
+            dictioOfFileNames[i] = self.read(Generals.subLibrary+i)
 
         return dictioOfFileNames
