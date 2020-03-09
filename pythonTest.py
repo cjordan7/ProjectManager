@@ -3,6 +3,7 @@ import os
 import subprocess
 import functools
 from inputOutput import iop
+from manager import Manager
 
 cdTo = """
 cd ~ && cd 
@@ -34,16 +35,6 @@ projectPathPython = {
     "pythonManager" : "Documents/Programming/Python/pythonManager"
 }
 
-projectsPathCPlusPlus = {"EmacsMake" : "Documents/Programming/C++/Projects/EmacsMaker",
-                         "OSTL" : "Documents/Programming/C++/Projects/OSTL",
-                         "CVGenerator" : "Documents/Programming/C++/CVGenerator",
-                         "CreateAppleScript" : "Documents/Programming/C++/CreateAppleScript",
-                         "2" : "",
-                         "3" : "prime,",
-                         "5" : "prime,",
-                         "7" : "prime,"
-}
-
 
 
 def cdToPath(path):
@@ -53,7 +44,7 @@ def printProjectsPath(dictio):
     for key, value in dictio.items():
         print("{:>20}  {:>1}  {:>20}".format(key, ":", value))
 
-printProjectsPath(projectsPathCPlusPlus)
+#printProjectsPath(projectsPathCPlusPlus)
 
 def pushPath(path):
     cdToPath(path)
@@ -67,6 +58,11 @@ def gitAll():
     #subprocess.call("./gitAll.sh", shell=True)
 
 i = iop()
+dictio = i.readAll()
 
-print("Here")
-print(i.read("swift"))
+manage = Manager()
+
+#"/Users/cosmejordan/Documents/EmacsBackups"
+#manage.deleteEmacsBackup("/Users/cosmejordan/Documents/EmacsBackups")
+
+print(dictio)

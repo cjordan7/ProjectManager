@@ -26,6 +26,6 @@ class iop:
         dictioOfFileNames = {}
         
         for i in fileNames:
-            dictioOfFileNames[i] = read(i)
+            dictioOfFileNames[i] = self.read(i)
 
         return dictioOfFileNames
