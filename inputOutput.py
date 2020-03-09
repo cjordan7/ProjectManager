@@ -31,3 +31,5 @@ class iop:
             dictioOfFileNames[i] = self.read(Generals.subLibraryLanguage+i)
 
         return dictioOfFileNames
+
+#TODO: Implements CSV files
