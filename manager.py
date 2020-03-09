@@ -1,8 +1,9 @@
 
-import os, shutil
 import os
 import subprocess
 import glob
+
+from GeneralVar import Generals
 
 class Manager:
     def backup(self):
@@ -13,7 +14,7 @@ class Manager:
         print("Something")
 
     def emacsBackup(self):
-        subprocess.call("./backup.sh", shell=True, executable='/bin/bash')
+        subprocess.call(Generals.subLibraryScripts+"./backup.sh", shell=True, executable='/bin/bash')
         
         
     def deleteEmacsBackup(self, path):
