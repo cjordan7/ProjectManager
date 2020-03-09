@@ -21,11 +21,12 @@ class iop:
         return dictio
         
     def readAll(self):
+        subLibrary = "Language/"
         fileNames = {"python", "swift", "cpp", "c", "iOS"}
 
         dictioOfFileNames = {}
         
         for i in fileNames:
-            dictioOfFileNames[i] = self.read(i)
+            dictioOfFileNames[i] = self.read(subLibrary+i)
 
         return dictioOfFileNames
