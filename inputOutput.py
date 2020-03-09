@@ -23,8 +23,7 @@ class iop:
         return dictio
         
     def readAll(self):
-        subLibrary = "Language/"
-        fileNames = {"python", "swift", "cpp", "c", "iOS"}
+        fileNames = Generals.fileNames
 
         dictioOfFileNames = {}
         
