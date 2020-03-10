@@ -53,6 +53,7 @@ class Manager:
         for key, value in dictio.items():
             Generals.printSep()
             path = Generals.cdToPath(value)
+            print(path)
             command = path + " && " + Generals.gitAll
             subprocess.call(command,
                             shell=True, executable='/bin/bash')
