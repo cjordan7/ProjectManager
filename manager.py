@@ -34,7 +34,7 @@ class Manager:
             Generals.printSep()
             path = Generals.cdToPath(value)
             command = path + " && git status"
-            print("Here: " + value)
+            Generals.printProjectsPath(key, value)
             subprocess.call(command,
                             shell=True, executable='/bin/bash')
 
@@ -53,8 +53,7 @@ class Manager:
         for key, value in dictio.items():
             Generals.printSep()
             path = Generals.cdToPath(value)
-            print("Project: " + key)
-            print("Path: " + value)
+            Generals.printProjectsPath(key, value)
             command = path + " && " + Generals.gitAll
             subprocess.call(command,
                             shell=True, executable='/bin/bash')

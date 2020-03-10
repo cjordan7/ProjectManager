@@ -15,3 +15,8 @@ class Generals:
     def printSep():
         print("==========================================================")
         print("==========================================================")
+
+    @staticmethod
+    def printProjectsPath(project, path):
+        print("Project: " + project)
+        print("Path: " + path)
