@@ -54,7 +54,7 @@ class Manager:
             Generals.printSep()
             path = Generals.cdToPath(value)
             command = path + " && " + Generals.gitAll
-            print(command.replace("\n", ""))
+#            print(command.replace("\n", ""))
             print("Here: " + value)
             subprocess.call(command,
                             shell=True, executable='/bin/bash')
