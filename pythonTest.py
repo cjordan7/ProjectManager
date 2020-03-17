@@ -1,7 +1,8 @@
 
+import glob
+import os
 from inputOutput import iop
 from manager import Manager
-
 from GeneralVar import Generals
 
 
@@ -23,6 +24,10 @@ print("=======")
 manage.gitStatusFull(dictio)
 manage.pushAll(dictio)
 
+print("==================================")
+
+current = os.getcwd()
+print(current)
 print("==================================")
 i.getNames("Documents/Programming/Python/pythonManager")
             
