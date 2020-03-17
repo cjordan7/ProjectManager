@@ -31,17 +31,15 @@ class iop:
         return dictio
 
     def readAll(self):
-        fileNames = Generals.fileNames
+        #fileNames = Generals.fileNames
         current = Generals.getCurrentDir() + "/" + Generals.subLibraryLanguage
-        print("here----------")
-        #fileNames = self.getNames(current)
+        print(current)
+        fileNames = self.getNames(current)
         dictioOfFileNames = {}
 
+        print(Generals.getCurrentDir())
         for i in fileNames:
-            print("/////////////////////////////////////////////////////////////////")
-            print(Generals.subLibraryLanguage+i)
-            print("/////////////////////////////////////////////////////////////////")
-            dictioOfFileNames[i] = self.read(Generals.subLibraryLanguage+i)
+            dictioOfFileNames[i] = self.read(i)
         return dictioOfFileNames
 
 # TODO: Implements CSV files

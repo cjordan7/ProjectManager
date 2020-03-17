@@ -13,6 +13,11 @@ def printProjectsPath(dictio):
 # printProjectsPath(projectsPathCPlusPlus)
 
 
+# f = open("Language/applescript", "r")
+# f1 = f.readlines()
+# for line in f1:
+#     print(line)
+# f.close()
 i = iop()
 dictio = i.readAll()
 
