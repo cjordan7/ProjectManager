@@ -1,3 +1,6 @@
+import glob
+import os
+
 
 class Generals:
     # General path to sub-library
@@ -6,6 +9,10 @@ class Generals:
     fileNames = {"python", "swift", "cpp", "c", "iOS"}
     cdRoot = "cd ~"
     gitAll = 'git status && git add . && git commit -m \"Commit on $(date)\" && git push'
+
+    @staticmethod
+    def getCurrentDir():
+        return os.getcwd()
 
     @staticmethod
     def cdToPath(i):
