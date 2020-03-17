@@ -23,5 +23,5 @@ print("=======")
 manage.gitStatusFull(dictio)
 manage.pushAll(dictio)
 
-io.getNames(cdToPath(Generals.subLibraryLanguage))
+i.getNames(Generals.cdToPath(Generals.subLibraryLanguage))
             
