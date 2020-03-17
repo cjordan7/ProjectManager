@@ -26,7 +26,7 @@ manage.pushAll(dictio)
 
 print("==================================")
 
-current = Generals.getCurrentDir
+current = Generals.getCurrentDir()
 print(current)
 print("==================================")
 i.getNames("Documents/Programming/Python/pythonManager")
