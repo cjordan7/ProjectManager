@@ -10,7 +10,7 @@ class iop:
 
     def getNames(self, path):
         os.chdir(path)
-        print("Here========")
+
         filesNames = []
         for file in glob.glob("*"):
             filesNames.append(file)
