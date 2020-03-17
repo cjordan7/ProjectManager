@@ -23,5 +23,6 @@ print("=======")
 manage.gitStatusFull(dictio)
 manage.pushAll(dictio)
 
+print("==================================")
 i.getNames("Documents/Programming/Python/pythonManager")
             
