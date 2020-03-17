@@ -1,4 +1,6 @@
 
+import glob
+import os
 from GeneralVar import Generals
 
 
@@ -6,8 +8,10 @@ class iop:
     def createFile(self, fileName):
         f = open(fileName, "w+")
 
-#    def createFile():
-#
+    def getNames(self, path):
+        os.chdir(path)
+        for file in glob.glob("*.txt"):
+            print(file)
 
     def read(self, fileName):
         dictio = dict()

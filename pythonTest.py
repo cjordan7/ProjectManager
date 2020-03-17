@@ -2,6 +2,8 @@
 from inputOutput import iop
 from manager import Manager
 
+from GeneralVar import Generals
+
 
 def printProjectsPath(dictio):
     for key, value in dictio.items():
@@ -20,5 +22,6 @@ print(dictio.keys())
 print("=======")
 manage.gitStatusFull(dictio)
 manage.pushAll(dictio)
-# "/Users/cosmejordan/Documents/EmacsBackups"
-# manage.deleteEmacsBackup("/Users/cosmejordan/Documents/EmacsBackups")
+
+io.getNames(cdToPath(Generals.subLibraryLanguage))
+            
