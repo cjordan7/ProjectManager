@@ -38,9 +38,9 @@ class iop:
         dictioOfFileNames = {}
 
         for i in fileNames:
-            print("=========================================================")
+            print("/////////////////////////////////////////////////////////////////")
             print(Generals.subLibraryLanguage+i)
-            print("=========================================================")
+            print("/////////////////////////////////////////////////////////////////")
             dictioOfFileNames[i] = self.read(Generals.subLibraryLanguage+i)
         return dictioOfFileNames
 
