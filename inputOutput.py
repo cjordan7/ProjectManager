@@ -1,10 +1,11 @@
 
 from GeneralVar import Generals
 
-class iop:    
+
+class iop:
     def createFile(self, fileName):
         f = open(fileName, "w+")
-        
+
 #    def createFile():
 #
 
@@ -30,6 +31,7 @@ class iop:
         for i in fileNames:
             dictioOfFileNames[i] = self.read(Generals.subLibraryLanguage+i)
 
+        print(dictioOfFileNames)
         return dictioOfFileNames
 
 # TODO: Implements CSV files
