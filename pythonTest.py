@@ -29,4 +29,4 @@ print("==================================")
 current = Generals.getCurrentDir() + "/" + Generals.subLibraryLanguage
 print(current)
 print("==================================")
-i.getNames(current)
+print(i.getNames(current))

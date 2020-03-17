@@ -11,8 +11,10 @@ class iop:
     def getNames(self, path):
         os.chdir(path)
         print("Here========")
+        filesNames = []
         for file in glob.glob("*"):
-            print(file)
+            filesNames.append(file)
+        return filesNames
 
     def read(self, fileName):
         dictio = dict()
