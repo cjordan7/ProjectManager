@@ -35,7 +35,7 @@ class iop:
         print(current)
         fileNames = self.getNames(current)
         dictioOfFileNames = {}
-        
+
         for i in fileNames:
             dictioOfFileNames[i] = self.read(i)
         return dictioOfFileNames
