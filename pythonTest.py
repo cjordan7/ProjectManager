@@ -29,5 +29,5 @@ print("==================================")
 current = Generals.getCurrentDir() + Generals.subLibraryLanguage
 print(current)
 print("==================================")
-i.getNames("Documents/Programming/Python/pythonManager")
+i.getNames(current)
             
