@@ -32,12 +32,15 @@ class iop:
 
     def readAll(self):
         fileNames = Generals.fileNames
-
+        current = Generals.getCurrentDir() + "/" + Generals.subLibraryLanguage
+        print("here----------")
+        #fileNames = self.getNames(current)
         dictioOfFileNames = {}
 
         for i in fileNames:
+            print(i)
+            print(Generals.subLibraryLanguage+i)
             dictioOfFileNames[i] = self.read(Generals.subLibraryLanguage+i)
-
         return dictioOfFileNames
 
 # TODO: Implements CSV files
