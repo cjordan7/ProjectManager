@@ -23,5 +23,5 @@ print("=======")
 manage.gitStatusFull(dictio)
 manage.pushAll(dictio)
 
-i.getNames(Generals.cdToPath(Generals.subLibraryLanguage))
+i.getNames("Documents/Programming/Python/pythonManager")
             
