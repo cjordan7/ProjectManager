@@ -11,7 +11,7 @@ class iop:
     def getNames(self, path):
         os.chdir(path)
         print("Here========")
-        for file in glob.glob("*.txt"):
+        for file in glob:
             print(file)
 
     def read(self, fileName):
