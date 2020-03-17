@@ -10,6 +10,7 @@ class iop:
 
     def getNames(self, path):
         os.chdir(path)
+        print("Here========")
         for file in glob.glob("*.txt"):
             print(file)
 
@@ -35,7 +36,6 @@ class iop:
         for i in fileNames:
             dictioOfFileNames[i] = self.read(Generals.subLibraryLanguage+i)
 
-        print(dictioOfFileNames)
         return dictioOfFileNames
 
 # TODO: Implements CSV files
