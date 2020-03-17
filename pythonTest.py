@@ -32,6 +32,4 @@ manage.pushAll(dictio)
 print("==================================")
 
 current = Generals.getCurrentDir() + "/" + Generals.subLibraryLanguage
-print(current)
-print("==================================")
-print(i.getNames(current))
+# print(i.getNames(current))

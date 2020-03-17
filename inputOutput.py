@@ -31,13 +31,11 @@ class iop:
         return dictio
 
     def readAll(self):
-        #fileNames = Generals.fileNames
         current = Generals.getCurrentDir() + "/" + Generals.subLibraryLanguage
         print(current)
         fileNames = self.getNames(current)
         dictioOfFileNames = {}
-
-        print(Generals.getCurrentDir())
+        
         for i in fileNames:
             dictioOfFileNames[i] = self.read(i)
         return dictioOfFileNames
