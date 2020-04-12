@@ -23,7 +23,7 @@ class iop:
         f1 = f.readlines()
         for line in f1:
             # TODO: Create files swift, python,...
-            first, second = line.replace(" ", "").split(":")
+            first, second = line.split(":")
             dictio[first] = second
 
         f.close()
