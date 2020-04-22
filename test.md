@@ -1,6 +1,8 @@
 This is a regular paragraph.
 
+<html>
 <h1>title</h1>
+<body>
 <p>
     Some paragraph, test
 </p>
@@ -20,5 +22,6 @@ This is a regular paragraph.
         <td>Foo</td>
     </tr>
 </table>
-
+</body>
+</html>
 This is another regular paragraph.
